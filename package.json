@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "mongoose": "^5.12.3"
+  },
+  "name": "helpers.in",
+  "description": "A one stop solution for both Jobseekers and hirers regarding the blue-collar workers.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skandg41/Helpers.in.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skandg41/Helpers.in/issues"
+  },
+  "homepage": "https://github.com/skandg41/Helpers.in#readme"
+}
