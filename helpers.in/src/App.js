@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { MemoryRouter as Router, Route, Switch } from "react-router-dom";
 import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
 
@@ -14,7 +14,10 @@ import Login from "./components/auth/Login";
 import CustomerPrivateRoute from "./components/private-route/CustomerPrivateRoute";
 import JobSeekerPrivateRoute from "./components/private-route/JobSeekerPrivateRoute ";
 import CustomerDashboard from "./components/private-components/Customers/CustomerHome";
+import UpdateCustProfile from "./components/private-components/Customers/UpdateCustProfile";
+import SearchWorkers from "./components/private-components/Customers/SearchWorkers";
 import SeekersDashboard from "./components/private-components/Seekers/SeekersHome";
+import SeekersProfile from "./components/private-components/Seekers/UpdateJSProfile";
 import "./App.css";
 
 // Check for token to keep user logged in
@@ -48,7 +51,10 @@ class App extends Component {
             <Route exact path="/login" component={Login} />
             <Switch>
               <CustomerPrivateRoute exact path="/customerdashboard" component={CustomerDashboard} />
+              <CustomerPrivateRoute exact path="/customerprofile" component={UpdateCustProfile} />
+              <CustomerPrivateRoute exact path="/searchWorkers" component={SearchWorkers} />
               <JobSeekerPrivateRoute exact path="/jobseekerdashboard" component={SeekersDashboard} />
+              <JobSeekerPrivateRoute exact path="/jobseekerprofile" component={SeekersProfile} />
             </Switch>
           </div>
         </Router>

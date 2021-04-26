@@ -2,7 +2,7 @@ import axios from "axios";
 import setAuthToken from "../utils/setAuthToken";
 import jwt_decode from "jwt-decode";
 
-import { GET_ERRORS, SET_CURRENT_USER, USER_LOADING } from "./types";
+import { GET_ERRORS, SET_CURRENT_USER, USER_LOADING, UPDATE_CURRENT_USER, FETCH_JOB_SEEKERS } from "./types";
 
 // Register User
 export const registerUser = (userData, history) => dispatch => {
@@ -42,6 +42,39 @@ export const loginUser = userData => dispatch => {
     );
 };
 
+export const updateCProfile = (userData, history) => dispatch => {
+  axios
+    .post("/api/customer/update", userData)
+    .then(res => {
+      // Save to localStorage
+      console.log("Data in authaction : "+res.data);
+      // Set current user
+      dispatch(updateCurrentUser(res.data));
+    })
+    .catch(err =>
+      dispatch({
+        type: GET_ERRORS,
+        payload: err.response.data
+      })
+    );
+};
+
+export const updateJobSProfile = (userData, history) => dispatch => {
+  axios
+    .post("/api/jobseeker/update", userData)
+    .then(res => {
+      // Save to localStorage
+      console.log("Data in authaction : "+res.data);
+      // Set current user
+      dispatch(updateCurrentUser(res.data));
+    })
+    .catch(err =>
+      dispatch({
+        type: GET_ERRORS,
+        payload: err.response.data
+      })
+    );
+};
 // Set logged in user
 export const setCurrentUser = decoded => {
   return {
@@ -50,6 +83,12 @@ export const setCurrentUser = decoded => {
   };
 };
 
+export const updateCurrentUser = decoded =>{
+  return {
+    type: UPDATE_CURRENT_USER,
+    payload: decoded
+  };
+}
 // User loading
 export const setUserLoading = () => {
   return {
@@ -66,3 +105,27 @@ export const logoutUser = () => dispatch => {
   // Set current user to empty object {} which will set isAuthenticated to false
   dispatch(setCurrentUser({}));
 };
+
+export const fetchJobSeekers = () => dispatch => {
+  axios
+    .get("/api/customer/fetchJobSeekers")
+    .then(res => {
+      // Save to localStorage
+      console.log("Data in authaction fetch: "+ JSON.stringify(res.data));
+      // Set current user
+      dispatch(fetchJobSeekersSuccess(res.data));
+    })
+    .catch(err =>
+      dispatch({
+        type: GET_ERRORS,
+        payload: err.response.data
+      })
+    );
+};
+
+export const fetchJobSeekersSuccess = decoded =>{
+  return{
+    type : FETCH_JOB_SEEKERS,
+    payload : decoded
+  }
+}

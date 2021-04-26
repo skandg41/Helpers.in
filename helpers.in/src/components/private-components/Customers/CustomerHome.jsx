@@ -2,12 +2,22 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../actions/authActions";
+import { Link } from "react-router-dom";
 
 class CustomerDashboard extends Component{
     onLogoutClick = e => {
         e.preventDefault();
         this.props.logoutUser();
       };
+
+      componentWillReceiveProps(nextProps) {
+        if (nextProps.errors) {
+          this.setState({
+            errors: nextProps.errors
+          });
+        }
+      }
+
       render() {
         const { user } = this.props.auth;
         
@@ -22,6 +32,32 @@ class CustomerDashboard extends Component{
                       <span style={{ fontFamily: "monospace" }}> Customer </span>  👏
                     </p>
                   </h4>
+                  <Link to="/customerprofile" props={this.state}>
+                  <button
+                    style={{
+                      width: "150px",
+                      borderRadius: "3px",
+                      letterSpacing: "1.5px",
+                      marginTop: "1rem"
+                    }}
+                    className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                  >
+                    Update Profile
+                  </button>
+                  </Link>
+                  <Link to="/searchWorkers" props={this.state}>
+                  <button
+                    style={{
+                      width: "150px",
+                      borderRadius: "3px",
+                      letterSpacing: "1.5px",
+                      marginTop: "1rem"
+                    }}
+                    className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                  >
+                    Search Workers
+                  </button>
+                  </Link>
                   <button
                     style={{
                       width: "150px",

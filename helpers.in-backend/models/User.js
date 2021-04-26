@@ -17,6 +17,7 @@ const UserSchema = new Schema({
   },
   utype:{
     type: String,
+    enum: ['Customer', 'JobSeeker', 'Admin'],
     required: true,
   },
   mobile:{
@@ -29,7 +30,31 @@ const UserSchema = new Schema({
   date: {
     type: Date,
     default: Date.now
-  }
+  },
+  review: [{
+    title:{
+      type:String,
+      required: true
+    },
+    rating:{
+      type:Number,
+      min:0,
+      max:10
+    }
+  }],
+  bookingRequests: [{
+    Bookerid:{
+      type:String,
+      required: true
+    },
+    DateofReq:{
+      type:Date,
+      default: Date.now
+    },
+    Status:{
+      type: String,
+    }
+  }]
 });
 
 module.exports = User = mongoose.model("users", UserSchema);

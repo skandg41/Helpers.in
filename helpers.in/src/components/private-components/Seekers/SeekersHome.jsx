@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../actions/authActions";
+import { Link } from "react-router-dom";
 
 class SeekerDashboard extends Component{
     onLogoutClick = e => {
@@ -22,6 +23,21 @@ class SeekerDashboard extends Component{
                       <span style={{ fontFamily: "monospace" }}> we provide best offers and ensure safe employement for yourself </span>  👏
                     </p>
                   </h4>
+                  <Link to="/jobseekerprofile" props={this.state}>
+                  <button
+                    style={{
+                      width: "150px",
+                      borderRadius: "3px",
+                      letterSpacing: "1.5px",
+                      marginTop: "1rem"
+                    }}
+              
+                    className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                  >
+                    Update Profile
+                  </button>
+                  </Link>
+
                   <button
                     style={{
                       width: "150px",
