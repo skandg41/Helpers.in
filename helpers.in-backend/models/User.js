@@ -53,6 +53,7 @@ const UserSchema = new Schema({
     },
     Status:{
       type: String,
+      enum: ['Requested', 'Confirmed', 'Rejected']
     }
   }]
 });

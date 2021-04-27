@@ -113,17 +113,18 @@ export const fetchJobSeekers = () => dispatch => {
       // Save to localStorage
       console.log("Data in authaction fetch: "+ JSON.stringify(res.data));
       // Set current user
-      dispatch(fetchJobSeekersSuccess(res.data));
+      res.data.map(element => dispatch(fetchJobSeekersSuccess(element)));
     })
     .catch(err =>
       dispatch({
         type: GET_ERRORS,
-        payload: err.response.data
+        payload: err
       })
     );
 };
 
 export const fetchJobSeekersSuccess = decoded =>{
+  console.log(decoded);
   return{
     type : FETCH_JOB_SEEKERS,
     payload : decoded

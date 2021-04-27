@@ -7,6 +7,7 @@ const passport = require("passport");
 
 // Load input validation
 const validateCUpdateInput = require("../../validation/update");
+const validateBookingInput = require("../../validation/booking");
 // Load User model
 const User = require("../../models/User");
 
@@ -41,9 +42,33 @@ router.post("/update", (req, res) => {
 router.get("/fetchJobSeekers",(req,res) =>{
   User.find({utype:'JobSeeker'},{name:1,mobile:1,location:1,review:1,booking:1}).then(result =>{
     console.log(result);
-    res.json({result});
+    res.json(result);
   }).catch(error =>{
     console.log(error);
   })
 })
+
+router.post("/book",(req,res) =>{
+    // Form validation
+
+    const { errors, isValid } = validateBookingInput(req.body);
+
+    // Check validation
+    if (!isValid) {
+      return res.status(400).json(errors);
+    }
+  
+    var bookreq = { Bookerid:req.body.Booker, Status:"Requested" };
+    User.findOneAndUpdate({ _id: req.body.target, utype:"JobSeeker" }, { $push: { bookingRequests : bookreq } },
+      function (error, success) {
+        if (error) {
+            console.log(error);
+        } else {
+            console.log(success);
+            res.status(200).json({msg:"Success"});
+        }
+    });
+});
+
+
 module.exports = router;

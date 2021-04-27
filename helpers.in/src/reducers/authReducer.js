@@ -5,6 +5,7 @@ const isEmpty = require("is-empty");
 const initialState = {
   isAuthenticated: false,
   user: {},
+  Seeker: [{_id: "", name: "", mobile:"", location: "", review:[]}],
   loading: false
 };
 
@@ -30,12 +31,15 @@ export default function(state = initialState, action) {
           user: action.payload
         };
         case FETCH_JOB_SEEKERS:
-          console.log("fetch see "+ action.payload.result[0].name);
+          console.log("fetch see "+ action.payload);
+          console.log(state.Seeker);
           return {
             ...state,
             isAuthenticated : true,
-            Seekers : action.payload
+            Seeker : [...state.Seeker, action.payload]
           }
+
+        
     default:
       return state;
   }

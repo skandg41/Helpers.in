@@ -1,13 +1,8 @@
-import React, {useState} from "react";
-import axios from "axios";
+import React from "react";
 
-export default function CardDisplay(props){
+function CardDisplay(props){
   console.log("props "+props);  
-  
-  const Workers = [];
-
-
-  
+  const Workers =[]
 
   return 
   (<div>{ Workers.map((pers) =>(
@@ -30,7 +25,6 @@ export default function CardDisplay(props){
           </div>
         ))}
         </div>)
-        ;
 }
         
-        
+export default CardDisplay;
