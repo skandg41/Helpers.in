@@ -55,19 +55,22 @@ class LookForWork extends Component{
       render(){
         console.log("getstore "+ store.getState().auth.proposals);
         const customers = store.getState().auth.proposals;
+        const filCust = customers.filter((cus) =>{
+          return cus.Status === "Requested";
+        });
         console.log(customers[1])
         return (
-        <div style={{ height: "75vh" }} className="container valign-wrapper">
+        <div  className="container valign-wrapper">
         <div className="row">
         <div className="col s12" style={{ paddingLeft: "11.250px" }}>
               <h4>
-                <b>UpdateJSProfile</b> below
+                <b>Accept or reject Booking requests </b> below
               </h4>
               <p className="grey-text text-darken-1">
                 No Change Back to <Link to="/jobseekerdashboard">Dashboard</Link>
               </p>
             </div>
-          { customers.map((pers) =>(
+          { filCust.map((pers) =>(
             <div className="col s12 m7">
               <div className="card" id={pers._id+"1"}>
                 <div className="card-image">
@@ -75,7 +78,7 @@ class LookForWork extends Component{
                   <span className="card-title">{pers.name}</span>
                 </div>
                 <div className="card-content">
-                  <p> Name: {pers.name} Contact number: {pers.mobile} Location Available :{pers.location} </p>
+                  <p> Booking person id {pers.Bookerid} Date and time of Booking {pers.DateofReq} </p>
                 </div>
                 <div className="card-action">
                   <button onClick={this.accept} id={pers._id}>Accept</button>
@@ -83,11 +86,9 @@ class LookForWork extends Component{
                 <div className="card-action">
                   <button onClick={this.reject} id={pers._id}>reject</button>
                 </div>
-            
             </div>
           </div>
-          ))
-          }
+          ))}
           </div>
         </div>
         )

@@ -41,23 +41,11 @@ router.post("/update", (req, res) => {
 
 router.post("/fetchJobProposals",(req,res) =>{
   console.log(req.body._id);
-  const response = [];
   const user = req.body._id;
-  User.findOne({_id: user, utype:'JobSeeker'},{_id:0,bookingRequests:1}).then(async(result) =>{
-    
-    console.log("Outer Query "+result);
-         result.bookingRequests.forEach(async(cust) =>{
-       User.findOne({_id:cust.Bookerid},{name:1,location:1}).then(result =>{
-        console.log("inner query "+ result)
-        response.push(result);
-        console.log(response);}).catch(err => console.log(err))
-      })
-      console.log("response "+ response);
-      res.json(response);
-    }).catch(error =>{
-    console.log(error);
-  }).then(()=> console.log("then "+response));
-  console.log("function "+response);
+  User.findOne({_id: user, utype:'JobSeeker'},{_id:0,bookingRequests:1}).then(result =>{
+    console.log(result.bookingRequests);
+    res.json(result.bookingRequests);
+  }).catch(err => res.status(400).json(err));
 })
 
 router.post("/proposals", (req, res) => {

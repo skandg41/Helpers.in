@@ -6,7 +6,7 @@ const initialState = {
   isAuthenticated: false,
   user: {},
   Seeker: [{_id: "", name: "", mobile:"", location: "", review:[]}],
-  proposals : [{cus_id:"", }],
+  proposals : [{_id: "",Bookerid: "",Status: "",DateofReq:"" }],
   loading: false
 };
 
