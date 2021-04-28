@@ -25,6 +25,7 @@
     "mongoose": "^5.12.5",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
+    "twilio": "^3.61.0",
     "validator": "^10.11.0",
     "winston": "^3.3.3",
     "winston-elasticsearch": "^0.15.4"

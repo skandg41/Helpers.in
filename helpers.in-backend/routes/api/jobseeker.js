@@ -7,6 +7,7 @@ const passport = require("passport");
 
 // Load input validation
 const validateCUpdateInput = require("../../validation/update");
+const validateProposalInput = require("../../validation/proposal");
 // Load User model
 const User = require("../../models/User");
 
@@ -36,5 +37,49 @@ router.post("/update", (req, res) => {
      console.log("result id :"+result);
       res.json(result);
    }});
+});
+
+router.post("/fetchJobProposals",(req,res) =>{
+  console.log(req.body._id);
+  const response = [];
+  const user = req.body._id;
+  User.findOne({_id: user, utype:'JobSeeker'},{_id:0,bookingRequests:1}).then(async(result) =>{
+    
+    console.log("Outer Query "+result);
+         result.bookingRequests.forEach(async(cust) =>{
+       User.findOne({_id:cust.Bookerid},{name:1,location:1}).then(result =>{
+        console.log("inner query "+ result)
+        response.push(result);
+        console.log(response);}).catch(err => console.log(err))
+      })
+      console.log("response "+ response);
+      res.json(response);
+    }).catch(error =>{
+    console.log(error);
+  }).then(()=> console.log("then "+response));
+  console.log("function "+response);
+})
+
+router.post("/proposals", (req, res) => {
+  // Form validation
+
+  const { errors, isValid } = validateProposalInput(req.body);
+  
+  // Check validation
+  if (!isValid) {
+    return res.status(400).json(errors);
+  }
+  const JobSeeker = req.body.JobSeeker;
+  const Customer = req.body.customer;
+  const response = req.body.response==="Accept" ? 'Confirmed' : 'Rejected';
+  
+  User.updateMany({'bookingRequests.Bookerid': Customer}, {'$set': {
+    'bookingRequests.$.Status': response }}, function(err,result) {
+      if(err) res.status(400).json(err);
+      else {
+        console.log(result);
+        res.status(200).json("Success");
+      }
+  });
 });
 module.exports = router;

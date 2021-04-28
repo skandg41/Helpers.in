@@ -1,15 +1,17 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { fetchJobSeekers } from "../../../actions/authActions";
+import { connect } from "react-redux";
+import { fetchJobProposals } from "../../../actions/authActions";
 import axios from "axios";
 import store from "../../../store";
-class SearchWorkers extends Component{
+
+class LookForWork extends Component{
   constructor(props) {
     super(props);
-    this.props.fetchJobSeekers();
+    
     this.state = {...props.auth.user, errors: {} };
+    this.props.fetchJobProposals(this.state.id);
     console.log(this.state.id);
   }
 
@@ -21,36 +23,51 @@ class SearchWorkers extends Component{
     }
   }
 
-  Book =e =>{
+  accept =e =>{
     e.preventDefault();
     console.log(e.target.id);
     console.log(this.state.id);
-    const Bookreq={
-      Booker : this.state.id,
-      target : e.target.id,
+    const confirmation={
+      JobSeeker : this.state.id,
+      customer : e.target.id,
+      response : "Accept"
     }
-    axios.post("/api/customer/book",Bookreq).then(res=>{
+    axios.post("/api/jobseeker/proposals",confirmation).then(res=>{
       console.log(res);
-      window.alert("Request submitted Successfully we will revert you the status by sms");
+      window.alert("Congrats your job is confirmed you will receive contact details of job provider through sms on your registered mobile number");
     }).catch(err => console.log(err));
   }
 
+  reject =e =>{
+    e.preventDefault();
+    console.log(e.target.id);
+    console.log(this.state.id);
+    const confirmation={
+      JobSeeker : this.state.id,
+      customer : e.target.id,
+      response : "Reject"
+    }
+    axios.post("/api/jobseeker/proposals",confirmation).then(res=>{
+      console.log(res);
+      window.alert("Thanks for using the service :) Keep looking for work");
+    }).catch(err => console.log(err));
+  }
       render(){
-        console.log("getstore "+ store.getState().auth.Seeker);
-        const Workers = store.getState().auth.Seeker;
-        console.log(Workers[1])
+        console.log("getstore "+ store.getState().auth.proposals);
+        const customers = store.getState().auth.proposals;
+        console.log(customers[1])
         return (
-        <div  className="container valign-wrapper">
+        <div style={{ height: "75vh" }} className="container valign-wrapper">
         <div className="row">
         <div className="col s12" style={{ paddingLeft: "11.250px" }}>
               <h4>
-                <b>UpdateCustProfile</b> below
+                <b>UpdateJSProfile</b> below
               </h4>
               <p className="grey-text text-darken-1">
-                No Change Back to <Link to="/customerdashboard">Dashboard</Link>
+                No Change Back to <Link to="/jobseekerdashboard">Dashboard</Link>
               </p>
             </div>
-          { Workers.map((pers) =>(
+          { customers.map((pers) =>(
             <div className="col s12 m7">
               <div className="card" id={pers._id+"1"}>
                 <div className="card-image">
@@ -61,7 +78,10 @@ class SearchWorkers extends Component{
                   <p> Name: {pers.name} Contact number: {pers.mobile} Location Available :{pers.location} </p>
                 </div>
                 <div className="card-action">
-                  <button onClick={this.Book} id={pers._id}>Request Booking</button>
+                  <button onClick={this.accept} id={pers._id}>Accept</button>
+                </div>
+                <div className="card-action">
+                  <button onClick={this.reject} id={pers._id}>reject</button>
                 </div>
             
             </div>
@@ -74,19 +94,19 @@ class SearchWorkers extends Component{
   }
 }
 
-SearchWorkers.propTypes = {
-  fetchJobSeekers: PropTypes.func.isRequired,
+LookForWork.propTypes = {
+  fetchJobProposals: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired
 };
 
 const mapStateToProps = state => ({
   auth: state.auth,
-  Seekers: state.Seekers,
+  proposals: state.proposals,
   errors: state.errors
 });
 
 export default connect(
   mapStateToProps,
-  { fetchJobSeekers }
-)(SearchWorkers);
+  { fetchJobProposals }
+)(LookForWork);

@@ -9,6 +9,7 @@ const UserSchema = new Schema({
   },
   email: {
     type: String,
+    unique: true,
     required: true
   },
   password: {
@@ -45,6 +46,7 @@ const UserSchema = new Schema({
   bookingRequests: [{
     Bookerid:{
       type:String,
+      unique:true,
       required: true
     },
     DateofReq:{

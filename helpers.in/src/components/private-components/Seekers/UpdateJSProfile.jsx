@@ -67,7 +67,7 @@ class UpdateJSProfile extends Component {
                 <b>UpdateJSProfile</b> below
               </h4>
               <p className="grey-text text-darken-1">
-                No Change Back to Home<Link to="//customerdashboard">Dashboard</Link>
+                No Change Back to <Link to="/jobseekerdashboard">Dashboard</Link>
               </p>
             </div>
             <form noValidate onSubmit={this.onSubmit}>

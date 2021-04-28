@@ -37,6 +37,22 @@ class SeekerDashboard extends Component{
                     Update Profile
                   </button>
                   </Link>
+                  
+                  <Link to="/lookforwork" props={this.state}>
+                  <button
+                    style={{
+                      width: "150px",
+                      borderRadius: "3px",
+                      letterSpacing: "1.5px",
+                      marginTop: "1rem"
+                    }}
+              
+                    className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                  >
+                    View Job Proposals
+                  </button>
+                  </Link>
+
 
                   <button
                     style={{

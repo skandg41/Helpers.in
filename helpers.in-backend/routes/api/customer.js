@@ -4,7 +4,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const keys = require("../../config/keys");
 const passport = require("passport");
-
+// const sendmsg = require("../../twilio");
 // Load input validation
 const validateCUpdateInput = require("../../validation/update");
 const validateBookingInput = require("../../validation/booking");
@@ -59,12 +59,13 @@ router.post("/book",(req,res) =>{
     }
   
     var bookreq = { Bookerid:req.body.Booker, Status:"Requested" };
-    User.findOneAndUpdate({ _id: req.body.target, utype:"JobSeeker" }, { $push: { bookingRequests : bookreq } },
+    User.findOneAndUpdate({ _id: req.body.target, utype:"JobSeeker" }, { $addToSet: { bookingRequests : bookreq } },
       function (error, success) {
         if (error) {
             console.log(error);
         } else {
             console.log(success);
+            // sendmsg(success.mobile,"You received an job opportunity please update the status on app");
             res.status(200).json({msg:"Success"});
         }
     });

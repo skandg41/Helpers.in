@@ -19,6 +19,7 @@ import SearchWorkers from "./components/private-components/Customers/SearchWorke
 import SeekersDashboard from "./components/private-components/Seekers/SeekersHome";
 import SeekersProfile from "./components/private-components/Seekers/UpdateJSProfile";
 import "./App.css";
+import LookForWork from "./components/private-components/Seekers/LookForWork";
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -55,6 +56,7 @@ class App extends Component {
               <CustomerPrivateRoute exact path="/searchWorkers" component={SearchWorkers} />
               <JobSeekerPrivateRoute exact path="/jobseekerdashboard" component={SeekersDashboard} />
               <JobSeekerPrivateRoute exact path="/jobseekerprofile" component={SeekersProfile} />
+              <JobSeekerPrivateRoute exact path="/lookforwork" component={LookForWork} />
             </Switch>
           </div>
         </Router>

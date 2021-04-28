@@ -2,7 +2,7 @@ import axios from "axios";
 import setAuthToken from "../utils/setAuthToken";
 import jwt_decode from "jwt-decode";
 
-import { GET_ERRORS, SET_CURRENT_USER, USER_LOADING, UPDATE_CURRENT_USER, FETCH_JOB_SEEKERS } from "./types";
+import { GET_ERRORS, SET_CURRENT_USER, USER_LOADING, UPDATE_CURRENT_USER, FETCH_JOB_SEEKERS, FETCH_JOB_PROPOSAL } from "./types";
 
 // Register User
 export const registerUser = (userData, history) => dispatch => {
@@ -46,8 +46,6 @@ export const updateCProfile = (userData, history) => dispatch => {
   axios
     .post("/api/customer/update", userData)
     .then(res => {
-      // Save to localStorage
-      console.log("Data in authaction : "+res.data);
       // Set current user
       dispatch(updateCurrentUser(res.data));
     })
@@ -63,8 +61,6 @@ export const updateJobSProfile = (userData, history) => dispatch => {
   axios
     .post("/api/jobseeker/update", userData)
     .then(res => {
-      // Save to localStorage
-      console.log("Data in authaction : "+res.data);
       // Set current user
       dispatch(updateCurrentUser(res.data));
     })
@@ -110,8 +106,6 @@ export const fetchJobSeekers = () => dispatch => {
   axios
     .get("/api/customer/fetchJobSeekers")
     .then(res => {
-      // Save to localStorage
-      console.log("Data in authaction fetch: "+ JSON.stringify(res.data));
       // Set current user
       res.data.map(element => dispatch(fetchJobSeekersSuccess(element)));
     })
@@ -127,6 +121,34 @@ export const fetchJobSeekersSuccess = decoded =>{
   console.log(decoded);
   return{
     type : FETCH_JOB_SEEKERS,
+    payload : decoded
+  }
+}
+
+export const fetchJobProposals = (userData) => dispatch => {
+  const req={
+    _id: userData
+  }
+  axios
+    .post("/api/jobseeker/fetchJobProposals",req)
+    .then(res => {
+      // Save to localStorage
+      console.log("Data in authaction fetch: "+ JSON.stringify(res.data));
+      // Set current user
+      res.data.map(element => dispatch(fetchJobProposalsSuccess(element)));
+    })
+    .catch(err =>
+      dispatch({
+        type: GET_ERRORS,
+        payload: err
+      })
+    );
+};
+
+export const fetchJobProposalsSuccess = decoded =>{
+  console.log(decoded);
+  return{
+    type : FETCH_JOB_PROPOSAL,
     payload : decoded
   }
 }
