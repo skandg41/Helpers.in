@@ -4,7 +4,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const keys = require("../../config/keys");
 const passport = require("passport");
-// const sendmsg = require("../../twilio");
+ const sendmsg = require("../../twilio");
 // Load input validation
 const validateCUpdateInput = require("../../validation/update");
 const validateBookingInput = require("../../validation/booking");
@@ -65,7 +65,7 @@ router.post("/book",(req,res) =>{
             console.log(error);
         } else {
             console.log(success);
-            // sendmsg(success.mobile,"You received an job opportunity please update the status on app");
+            sendmsg(success.mobile,"You received an job opportunity please update the status on app");
             res.status(200).json({msg:"Success"});
         }
     });
