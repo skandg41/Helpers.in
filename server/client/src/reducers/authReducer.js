@@ -32,8 +32,8 @@ export default function(state = initialState, action) {
           user: action.payload
         };
         case FETCH_JOB_SEEKERS:
-          console.log("fetch see "+ action.payload);
-          console.log(state.Seeker);
+          // console.log("fetch see "+ action.payload);
+          // console.log(state.Seeker);
           return {
             ...state,
             isAuthenticated : true,
@@ -41,8 +41,8 @@ export default function(state = initialState, action) {
           };
 
           case FETCH_JOB_PROPOSAL:
-          console.log("fetch see "+ action.payload);
-          console.log(state.proposals);
+          // console.log("fetch see "+ action.payload);
+          // console.log(state.proposals);
           return {
             ...state,
             isAuthenticated : true,

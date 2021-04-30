@@ -10,7 +10,7 @@ class SearchWorkers extends Component{
     super(props);
     this.props.fetchJobSeekers();
     this.state = {...props.auth.user, errors: {} };
-    console.log(this.state.id);
+    // console.log(this.state.id);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -23,22 +23,25 @@ class SearchWorkers extends Component{
 
   Book =e =>{
     e.preventDefault();
-    console.log(e.target.id);
-    console.log(this.state.id);
+    // console.log(e.target.id);
+    // console.log(this.state.id);
     const Bookreq={
       Booker : this.state.id,
       target : e.target.id,
     }
     axios.post("/api/customer/book",Bookreq).then(res=>{
-      console.log(res);
+      // console.log(res);
       window.alert("Request submitted Successfully we will revert you the status by sms");
     }).catch(err => console.log(err));
   }
 
       render(){
-        console.log("getstore "+ store.getState().auth.Seeker);
+        // console.log("getstore "+ store.getState().auth.Seeker);
         const Workers = store.getState().auth.Seeker;
-        console.log(Workers[1])
+        const filWork = Workers.filter((work) =>{
+          return work.name !== "";
+        });
+        // console.log(Workers[1])
         return (
         <div  className="container valign-wrapper">
         <div className="row">
@@ -50,7 +53,7 @@ class SearchWorkers extends Component{
                 No Change Back to <Link to="/customerdashboard">Dashboard</Link>
               </p>
             </div>
-          { Workers.map((pers) =>(
+          { filWork.map((pers) =>(
             <div className="col s12 m7">
               <div className="card" id={pers._id+"1"}>
                 <div className="card-image">

@@ -4,7 +4,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const keys = require("../../config/keys");
 const passport = require("passport");
-
+const logger = require("../../logger");
 // Load input validation
 const validateRegisterInput = require("../../validation/register");
 const validateLoginInput = require("../../validation/login");
@@ -17,7 +17,6 @@ const User = require("../../models/User");
 // @access Public
 router.post("/register", (req, res) => {
   // Form validation
-  console.log(req.body);
   const { errors, isValid } = validateRegisterInput(req.body);
 
   // Check validation
@@ -45,8 +44,13 @@ router.post("/register", (req, res) => {
           newUser.password = hash;
           newUser
             .save()
-            .then(user => res.json(user))
-            .catch(err => console.log(err));
+            .then(user => {
+              res.json(user);
+              logger.info('handled request',{req,res});
+            })
+            .catch(err => {
+              logger.error("Error in register",{err:err});
+            });
         });
       });
     }
@@ -101,10 +105,11 @@ router.post("/login", (req, res) => {
               success: true,
               token: "Bearer " + token
             });
+            logger.info('handled request',{req,res});
           }
         );
       } else {
-        return res
+        res
           .status(400)
           .json({ passwordincorrect: "Password incorrect" });
       }

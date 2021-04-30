@@ -9,7 +9,7 @@ class UpdateCustProfile extends Component {
   constructor(props) {
     super(props);
     this.state = {...props.auth.user, errors: {} };
-    console.log(props.auth.user);
+    // console.log(props.auth.user);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -24,15 +24,15 @@ class UpdateCustProfile extends Component {
   };
   
   setUtype = e => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     this.setState({...this.state, utype : e.target.value});
-    console.log("from state"+this.state.utype);
-    console.log(this.state);
+    // console.log("from state"+this.state.utype);
+    // console.log(this.state);
   }
   
   onSubmit = e => {
     e.preventDefault();
-    console.log("UpdateSubmit");
+    // console.log("UpdateSubmit");
     const newUser = {
       id: this.state.id,
       name: this.state.name,
@@ -43,9 +43,9 @@ class UpdateCustProfile extends Component {
       utype: this.state.utype,
       location: this.state.location,
     };
-    console.log("inSub");
+    // console.log("inSub");
     this.props.updateCProfile(newUser, this.props.history);
-    console.log("Submitdone");
+    // console.log("Submitdone");
   };
 
   render() {

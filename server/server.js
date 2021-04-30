@@ -25,8 +25,8 @@ mongoose
     db,
     { useNewUrlParser: true, useUnifiedTopology: true , useFindAndModify: false }
   )
-  .then(() => console.log("MongoDB successfully connected"))
-  .catch(err => console.log(err));
+  .then(() => logger.log('Mongo DB Successfully connected'))
+  .catch(err => logger.error('Mongo Connection error',{err:err}));
 
 // Passport middleware
 app.use(passport.initialize());
@@ -41,7 +41,5 @@ app.use("/api/customer",customer);
 app.use("/api/jobseeker",jobseeker);
 
 const port = process.env.PORT || 5001;
-logger.info("Server running on port "+ port);
-logger.warn("Log Warning");
-logger.error(Error("Log Error"));
-app.listen(port, () => console.log(`Server up and running on port ${port} !`));
+
+app.listen(port, () => logger.info("Server running on port "+ port));

@@ -12,7 +12,7 @@ class LookForWork extends Component{
     
     this.state = {...props.auth.user, errors: {} };
     this.props.fetchJobProposals(this.state.id);
-    console.log(this.state.id);
+    // console.log(this.state.id);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -25,40 +25,40 @@ class LookForWork extends Component{
 
   accept =e =>{
     e.preventDefault();
-    console.log(e.target.id);
-    console.log(this.state.id);
+    // console.log(e.target.id);
+    // console.log(this.state.id);
     const confirmation={
       JobSeeker : this.state.id,
       customer : e.target.id,
       response : "Accept"
     }
     axios.post("/api/jobseeker/proposals",confirmation).then(res=>{
-      console.log(res);
+      // console.log(res);
       window.alert("Congrats your job is confirmed you will receive contact details of job provider through sms on your registered mobile number");
     }).catch(err => console.log(err));
   }
 
   reject =e =>{
     e.preventDefault();
-    console.log(e.target.id);
-    console.log(this.state.id);
+    // console.log(e.target.id);
+    // console.log(this.state.id);
     const confirmation={
       JobSeeker : this.state.id,
       customer : e.target.id,
       response : "Reject"
     }
     axios.post("/api/jobseeker/proposals",confirmation).then(res=>{
-      console.log(res);
+      // console.log(res);
       window.alert("Thanks for using the service :) Keep looking for work");
     }).catch(err => console.log(err));
   }
       render(){
-        console.log("getstore "+ store.getState().auth.proposals);
+        // console.log("getstore "+ store.getState().auth.proposals);
         const customers = store.getState().auth.proposals;
         const filCust = customers.filter((cus) =>{
           return cus.Status === "Requested";
         });
-        console.log(customers[1])
+        // console.log(customers[1])
         return (
         <div  className="container valign-wrapper">
         <div className="row">

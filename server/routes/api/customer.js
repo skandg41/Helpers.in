@@ -10,7 +10,7 @@ const validateCUpdateInput = require("../../validation/update");
 const validateBookingInput = require("../../validation/booking");
 // Load User model
 const User = require("../../models/User");
-
+const logger = require("../../logger");
 // @route POST api/users/login
 // @desc Login user and return JWT token
 // @access Public
@@ -29,22 +29,22 @@ router.post("/update", (req, res) => {
   const mobile = req.body.mobile;
   const location = req.body.location;
   
-
-  console.log("h");
   User.findOneAndUpdate({ _id: id },{$set:{name: name, mobile :mobile, location : location }},function(err,result){
-   if (err) {return res.status(400).json({Error : err});}
+   if (err) {
+    logger.error("Error in update",{err:err}); 
+    return res.status(400).json({Error : err});}
    else{
-     console.log("result id :"+result);
       res.json(result);
+      logger.info('handled request',{req,res});
    }});
 });
 
 router.get("/fetchJobSeekers",(req,res) =>{
   User.find({utype:'JobSeeker'},{name:1,mobile:1,location:1,review:1,booking:1}).then(result =>{
-    console.log(result);
     res.json(result);
+    logger.info('handled request',{req,res});
   }).catch(error =>{
-    console.log(error);
+    logger.error("Error in fetchjobSeekers",{err:error});
   })
 })
 
@@ -62,14 +62,12 @@ router.post("/book",(req,res) =>{
     User.findOneAndUpdate({ _id: req.body.target, utype:"JobSeeker" }, { $addToSet: { bookingRequests : bookreq } },
       function (error, success) {
         if (error) {
-            console.log(error);
+          logger.error("Error in book",{err:error});
         } else {
-            console.log(success);
             sendmsg(success.mobile,"You received an job opportunity please update the status on app");
             res.status(200).json({msg:"Success"});
+            logger.info('handled request',{req,res});
         }
     });
 });
-
-
 module.exports = router;

@@ -118,7 +118,7 @@ export const fetchJobSeekers = () => dispatch => {
 };
 
 export const fetchJobSeekersSuccess = decoded =>{
-  console.log(decoded);
+  // console.log(decoded);
   return{
     type : FETCH_JOB_SEEKERS,
     payload : decoded
@@ -133,7 +133,7 @@ export const fetchJobProposals = (userData) => dispatch => {
     .post("/api/jobseeker/fetchJobProposals",req)
     .then(res => {
       // Save to localStorage
-      console.log("Data in authaction fetch: "+ JSON.stringify(res.data));
+      // console.log("Data in authaction fetch: "+ JSON.stringify(res.data));
       // Set current user
       res.data.map(element => dispatch(fetchJobProposalsSuccess(element)));
     })
@@ -146,7 +146,7 @@ export const fetchJobProposals = (userData) => dispatch => {
 };
 
 export const fetchJobProposalsSuccess = decoded =>{
-  console.log(decoded);
+  // console.log(decoded);
   return{
     type : FETCH_JOB_PROPOSAL,
     payload : decoded

@@ -8,6 +8,4 @@ const logger = winston.createLogger({
   ]
 })
 
-logger.info('hi')
-logger.error('oops there is a problem', { err: new Error('boom') })
 module.exports = logger;
