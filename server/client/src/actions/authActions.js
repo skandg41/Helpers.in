@@ -104,7 +104,7 @@ export const logoutUser = () => dispatch => {
 
 export const fetchJobSeekers = () => dispatch => {
   axios
-    .get("/api/customer/fetchJobSeekers")
+    .post("/api/customer/fetchJobSeekers")
     .then(res => {
       // Set current user
       res.data.map(element => dispatch(fetchJobSeekersSuccess(element)));

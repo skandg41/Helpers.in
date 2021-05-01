@@ -39,7 +39,7 @@ router.post("/update", (req, res) => {
    }});
 });
 
-router.get("/fetchJobSeekers",(req,res) =>{
+router.post("/fetchJobSeekers",(req,res) =>{
   User.find({utype:'JobSeeker'},{name:1,mobile:1,location:1,review:1,booking:1}).then(result =>{
     res.json(result);
     logger.info('handled request',{req,res});

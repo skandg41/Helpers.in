@@ -7,6 +7,7 @@ const users = require("./routes/api/users");
 const customer = require("./routes/api/customer");
 const jobseeker = require("./routes/api/jobseeker");
 const app = express();
+const path = require('path');
 
 // Bodyparser middleware
 app.use(
@@ -34,6 +35,10 @@ app.use(passport.initialize());
 // Passport config
 require("./config/passport")(passport);
 
+app.use(express.static(path.join(__dirname, 'build')));
+app.get('/*', function (req, res) {
+   res.sendFile(path.join(__dirname, 'build', 'index.html'));
+ });
 
 // Routes
 app.use("/api/users", users);
