@@ -4,6 +4,6 @@ LABEL co.elastic.logs/json.keys_under_root:"true" co.elastic.logs/json.overwrite
 EXPOSE 3000
 ADD ./server /server/
 WORKDIR /server/
+RUN ["mv", "/server/client/build", "/server/"]
 RUN ["npm", "install"]
-RUN ["npm", "run", "client-install"]
-ENTRYPOINT ["npm", "run", "dev"]
+ENTRYPOINT ["npm", "start"]
