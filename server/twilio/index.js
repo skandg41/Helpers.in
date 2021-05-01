@@ -10,8 +10,8 @@ function sendmsg(number,msg){
            messagingServiceSid: 'MG2a7083937a868884d10d77d2740335d7',      
            to: '+91'+number 
          }) 
-        .then(message => logger.info("SMS "+ msg +" send to "+number + " sid "+message.sid)) 
-        .done();
+        .then(message => logger.info("SMS "+ msg +" send to "+number + " sid "+message.sid))
+        .catch(err => logger.err("Error in twilio module",{err:err}))
  }
 
 module.exports = sendmsg;
