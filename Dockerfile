@@ -5,5 +5,6 @@ EXPOSE 3000
 ADD ./server /server/
 ADD ./server/client/build /server/
 WORKDIR /server/
+RUN cp client/build ./ && rm -rf client
 RUN ["npm", "install"]
 ENTRYPOINT ["npm", "start"]
