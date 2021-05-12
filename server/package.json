@@ -6,9 +6,9 @@
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "node server.js",
-    "build":"npm build --prefix client",
+    "build": "npm build --prefix client",
     "test": "node test.js",
-    "test-client":"npm test --prefix client",
+    "test-client": "npm test --prefix client",
     "server": "node server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
@@ -21,6 +21,7 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "concurrently": "^6.0.2",
+    "dotenv": "^9.0.2",
     "express": "^4.17.1",
     "is-empty": "^1.2.0",
     "jsonwebtoken": "^8.5.1",

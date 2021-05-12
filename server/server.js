@@ -8,7 +8,7 @@ const customer = require("./routes/api/customer");
 const jobseeker = require("./routes/api/jobseeker");
 const app = express();
 const path = require('path');
-
+require('dotenv').config();
 // Bodyparser middleware
 app.use(
   bodyParser.urlencoded({
