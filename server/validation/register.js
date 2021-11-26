@@ -50,7 +50,7 @@ module.exports = function validateRegisterInput(data) {
 
   if(Validator.isEmpty(data.utype)){
     errors.utype ="Invalid Utype";
-  }const app = require('../app');
+  }
 
 
   if(Validator.isEmpty(data.location)){

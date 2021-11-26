@@ -1,0 +1,2802 @@
+
+> helpers-in@1.0.0 test
+> mocha
+
+
+
+  login
+    ✔ It should not return error
+
+  login
+    ✔ It should not return error
+
+  login
+    ✔ It should not return error
+
+  login
+    ✔ It should not return error
+
+  login
+    ✔ It should not return error
+
+  login
+    ✔ It should not return error
+
+  login
+    ✔ It should not return error
+
+  login
+    ✔ It should not return error
+
+  login
+    ✔ It should not return error
+
+  login
+    ✔ It should not return error
+
+  login
+    ✔ It should not return error
+
+  login
+    ✔ It should not return error
+
+  login
+    ✔ It should return error
+
+  login
+    ✔ It should return error
+
+  login
+    ✔ It should return error
+
+  login
+    ✔ It should return error
+
+  login
+    ✔ It should return error
+
+  login
+    ✔ It should return error
+
+  login
+    ✔ It should return error
+
+  login
+    ✔ It should return error
+
+  login
+    ✔ It should return error
+
+  login
+    ✔ It should return error
+
+  login
+    ✔ It should return error
+
+  login
+    ✔ It should return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should not return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  register
+    ✔ It should return error
+
+  update
+    ✔ It should not return error
+
+  update
+    ✔ It should not return error
+
+  update
+    ✔ It should not return error
+
+  update
+    ✔ It should not return error
+
+  update
+    ✔ It should not return error
+
+  update
+    ✔ It should not return error
+
+  update
+    ✔ It should not return error
+
+  update
+    ✔ It should not return error
+
+  update
+    ✔ It should not return error
+
+  update
+    ✔ It should not return error
+
+  update
+    ✔ It should not return error
+
+  update
+    ✔ It should not return error
+
+  update
+    ✔ It should not return error
+
+  update
+    ✔ It should not return error
+
+  update
+    ✔ It should not return error
+
+  update
+    ✔ It should not return error
+
+  update
+    ✔ It should not return error
+
+  update
+    ✔ It should not return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  update
+    ✔ It should return error
+
+  login
+    ✔ It should not return error
+
+
+  931 passing (641ms)
+
