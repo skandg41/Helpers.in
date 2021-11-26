@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "chai": "^4.3.4"
+  },
+  "dependencies": {
+    "n": "^8.0.0",
+    "node": "^17.1.0",
+    "stable": "^0.1.8"
+  }
+}
